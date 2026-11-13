@@ -2,6 +2,8 @@
 **IMPORTANT:** Use at your own risk! No warranty, You're solely responsible for anything that might happen. If you broke something - It's your fault!
 This guide is not comprehensive, nor completed. There's more to come. so again - **If you choose to use it, It's on you - You are responsible for whatever happens, good or bad**. Don't blame me for mistakes. but do let me know so I can fix it ASAP.
 
+You must always be aware that this is only partial. It lacks many things. It is not intended for production. You need to take care for your own needs and adjustments. This is an example for demonstration only.
+
 **No AI was used during the composition of this tutorial. (I hate AI)**
 
 This tutorial is based on the following sources:
@@ -12,7 +14,8 @@ This tutorial is based on the following sources:
 
 ## Requirements
 1. **Apache2**, Including the following modules: `mod_proxy` AND `mod_proxy_uwsgi`/`mod_proxy_http`
-2. Of course, **You need Gunicorn**.
+2. You also need to enable load balancer but you don't have to, If you don't wish to use load balancer simply use `ProxyPass` instead.
+3. Of course, **You need Gunicorn**.
 
 If you're interested to know, I tested this guide inside an Alpine Linux container using Incus.
 You may test it however you like.
